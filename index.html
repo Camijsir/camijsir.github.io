@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camilo Jaramillo — Página Académica</title>
+
+  <meta name="description" content="Página académica de Camilo Jaramillo: investigación, publicaciones, docencia y proyectos." />
+  <meta name="author" content="Camilo Maximiliano Jaramillo Sirguiado" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Camilo Jaramillo — Página Académica" />
+  <meta property="og:description" content="Investigación, publicaciones, docencia y proyectos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="foto.jpg" />
+  <meta property="og:url" content="https://TU-USUARIO.github.io/" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --fg: #0f172a;
+      --muted:#475569;
+      --accent:#2563eb;
+      --card:#f8fafc;
+      --border:#e2e8f0;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b1220;
+        --fg:#e5e7eb;
+        --muted:#93a3b8;
+        --accent:#60a5fa;
+        --card:#0f172a;
+        --border:#1f2937;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header.site-header{
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(8px);
+      background: color-mix(in oklab, var(--bg) 85%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap: 16px; padding: 12px 24px; max-width: 1100px; margin: 0 auto;
+    }
+    .brand { font-weight: 800; letter-spacing:.2px; }
+    .brand a{ text-decoration:none; color: var(--fg); }
+    .menu { display:flex; gap: 14px; flex-wrap: wrap; }
+    .menu a{
+      color: var(--muted); text-decoration:none; padding:8px 10px; border-radius:10px;
+    }
+    .menu a:hover{ color: var(--fg); background: var(--card); }
+    .hero{
+      display:grid; grid-template-columns: 140px 1fr; gap: 24px;
+      align-items:center; margin-top: 28px; padding: 24px; border:1px solid var(--border);
+      border-radius: 16px; background: var(--card);
+    }
+    .avatar{
+      width: 140px; height:140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--border);
+    }
+    h1{ font-size: clamp(28px, 4vw, 40px); margin: 0 0 4px; }
+    .subtitle{ color: var(--muted); margin-top: 6px; }
+    .badges{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px;
+      border:1px solid var(--border); background: #ffffff10;
+      text-decoration:none; color: var(--fg); font-weight: 600;
+    }
+    .badge:hover{ border-color: var(--accent); color: var(--accent); }
+    section { margin-top: 42px; }
+    section h2{ font-size: 22px; margin: 0 0 14px; }
+    .card{
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px;
+    }
+    .grid-2{ display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .grid-3{ display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    .list{ list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+    .item-title{ font-weight: 600; }
+    .meta{ color: var(--muted); font-size: 14px; }
+    .link{ color: var(--accent); text-decoration: none; }
+    .link:hover{ text-decoration: underline; }
+    footer{ border-top:1px solid var(--border); margin-top:36px; padding:22px 0; color: var(--muted); }
+    @media (max-width: 760px){
+      .hero{ grid-template-columns: 1fr; text-align: center; }
+      .badges{ justify-content: center; }
+      .grid-2, .grid-3{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand"><a href="#top">Camilo Jaramillo</a></div>
+      <div class="menu">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#publicaciones">Publicaciones</a>
+        <a href="#docencia">Docencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#cv">CV</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <img class="avatar" src="foto.jpg" alt="Foto de perfil" />
+      <div>
+        <h1>Camilo Maximiliano Jaramillo Sirguiado</h1>
+        <div class="subtitle">Investigador en <strong>TU UNIVERSIDAD</strong> · Áreas: teoría de mecanismos, school choice, algoritmos</div>
+        <div class="badges">
+          <a class="badge" href="mailto:tuemail@stanford.edu">📧 Email</a>
+          <a class="badge" href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">📚 Google Scholar</a>
+          <a class="badge" href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">💻 GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="card">
+        <p>
+          Soy investigador en economía y ciencias de la computación. Mis intereses incluyen teoría de mecanismos,
+          mercados de matching y diseño de políticas públicas.
+        </p>
+      </div>
+    </section>
+
+    <section id="publicaciones">
+      <h2>Publicaciones seleccionadas</h2>
+      <div class="card">
+        <ul class="list">
+          <li>
+            <div class="item-title">
+              <a class="link" href="#" target="_blank" rel="noopener">Título del paper 1</a>
+            </div>
+            <div class="meta">Revista/Conferencia, Año</div>
+          </li>
+          <li>
+            <div class="item-title">
+              <a class="link" href="#" target="_blank" rel="noopener">Título del paper 2</a>
+            </div>
+            <div class="meta">Working Paper, Año</div>
+          </li>
+        </ul>
+        <p style="margin-top:12px;">
+          Ver todas en <a class="link" href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+      </div>
+    </section>
+
+    <section id="docencia">
+      <h2>Docencia</h2>
+      <div class="card grid-2">
+        <div>
+          <div class="item-title">Curso XYZ — Stanford (2025)</div>
+          <div class="meta"><a class="link" href="#" target="_blank" rel="noopener">Syllabus / materiales</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="card grid-3">
+        <div>
+          <div class="item-title">Repositorio de algoritmos de matching</div>
+          <div class="meta"><a class="link" href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">Ver en GitHub</a></div>
+          <p>Implementaciones de DA, TTC, y variantes con capacidades.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <div class="card">
+        <p>Puedes ver/descargar mi CV aquí: <a class="link" href="cv.pdf" target="_blank" rel="noopener">cv.pdf</a></p>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="card">
+        <p><strong>Email:</strong> <a class="link" href="mailto:tuemail@stanford.edu">tuemail@stanford.edu</a></p>
+        <p><strong>Redes académicas:</strong>
+          <a class="link" href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Scholar</a> ·
+          <a class="link" href="https://orcid.org/XXXX" target="_blank" rel="noopener">ORCID</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container" style="padding:0;">
+        © <span id="y"></span> Camilo Jaramillo — Última actualización automática.
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
