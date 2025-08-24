@@ -22,22 +22,22 @@
       --bg: #ffffff;
       --fg: #1a1a1a;
       --muted: #666666;
-      --accent: #0066cc;
+      --accent: #1e3a8a;
       --card: #fafafa;
       --border: #e0e0e0;
-      --link: #0066cc;
-      --link-hover: #004499;
+      --link: #1e3a8a;
+      --link-hover: #1e40af;
     }
     @media (prefers-color-scheme: dark){
       :root{
         --bg: #1a1a1a;
         --fg: #ffffff;
         --muted: #cccccc;
-        --accent: #4da6ff;
+        --accent: #3b82f6;
         --card: #2a2a2a;
         --border: #404040;
-        --link: #4da6ff;
-        --link-hover: #80bfff;
+        --link: #3b82f6;
+        --link-hover: #60a5fa;
       }
     }
     * { box-sizing: border-box; }
@@ -89,6 +89,7 @@
       gap: 20px;
       margin-bottom: 40px;
       width: 100%;
+      align-items: center;
     }
     
     .sidebar-nav a {
@@ -99,6 +100,7 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       transition: opacity 0.2s ease;
+      text-align: center;
     }
     
     .sidebar-nav a:hover {
@@ -144,19 +146,19 @@
     
     /* Hero section */
     .hero{
-      margin-bottom: 120px;
+      margin-bottom: 40px;
     }
     h1{ 
-      font-size: 48px; 
+      font-size: 64px; 
       font-weight: 700;
-      margin: 0 0 20px; 
+      margin: 0 0 12px; 
       letter-spacing: -0.5px;
       color: var(--accent);
     }
     .subtitle{ 
       color: var(--muted); 
       font-size: 18px;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       font-weight: 400;
     }
 
@@ -176,14 +178,14 @@
     
     /* Second photo styling */
     .second-photo {
-      width: 1000px;
-      height: 500px;
+      width: 100%;
+      height: 600px;
       object-fit: cover;
       object-position: center;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       display: block;
-      margin: 0 auto;
+      margin: 0;
     }
     
     /* Card styling matching Nano's */
@@ -299,13 +301,12 @@
       <div class="sidebar-content">
         <img class="avatar" src="photo.jpeg" alt="Foto de perfil" />
         <nav class="sidebar-nav">
-          <a href="#sobre-mi">ABOUT</a>
           <a href="#publicaciones">PUBLICATIONS</a>
           <a href="#working-papers">WORKING PAPERS</a>
           <a href="#work-in-progress">WORK IN PROGRESS</a>
         </nav>
         <div class="social-icons">
-          <a href="https://www.dropbox.com/scl/fi/3skww9y8mld5on2o7dtx1/Cv___English_version_.pdf?rlkey=oqucviy35rk99aid7xyv2j7gr&st=kpt9knb4&dl=0" target="_blank" rel="noopener" class="social-icon">📄</a>
+          <a href="https://www.dropbox.com/scl/fi/3skww9y8mld5on2o7dtx1/Cv___English_version_.pdf?rlkey=oqucviy35rk99aid7xyv2j7gr&st=kpt9knb4&dl=0" target="_blank" rel="noopener" class="social-icon">CV</a>
           <a href="https://scholar.google.com/citations?user=UmL7H0cAAAAJ&hl=es" target="_blank" rel="noopener" class="social-icon">G</a>
         </div>
       </div>
@@ -313,23 +314,21 @@
 
     <!-- Main Content -->
     <main class="main-content">
-      <section class="hero">
-        <h1>Camilo J. Sirguiado</h1>
-        <div class="subtitle">Investigador en <strong>TU UNIVERSIDAD</strong> · Áreas: teoría de mecanismos, school choice, algoritmos</div>
-      </section>
+              <section class="hero">
+          <h1>Camilo J. Sirguiado</h1>
+        </section>
 
     <section id="sobre-mi">
       <div class="card">
         <p>
-          Soy investigador en economía y ciencias de la computación. Mis intereses incluyen teoría de mecanismos,
-          mercados de matching y diseño de políticas públicas.
+        I am research fellow at Stanford Graduate School of Business. You can contact me at <strong>camijsir@stanford.edu</strong>.  
+        <p>
+        My main interests lie in the fields of market design and matching theory.  I am from Chile, and <a href="#valdivia" class="link">Valdivia</a> is my hometown. 
         </p>
       </div>
     </section>
 
-          <section id="second-photo">
-        <img src="photo2.jpeg" alt="Second photo" class="second-photo" />
-      </section>
+
 
       <section id="publicaciones">
         <h2 class="section-title">Publications</h2>
@@ -337,17 +336,16 @@
           <ul class="list">
             <li>
               <div class="item-title">
-                <a class="link" href="#" target="_blank" rel="noopener">Título del paper 1</a>
+                <a class="link" href="https://www.sciencedirect.com/science/article/pii/S0899825624001519?via%3Dihub" target="_blank" rel="noopener">Strategic behavior in one-to-one matching markets without outside options</a>
               </div>
-              <div class="coauthors">Coautor 1, Coautor 2, Coautor 3</div>
-              <div class="citation">Revista/Conferencia, Año</div>
+              <div class="coauthors">With Juan Pablo Torres-Martinez</div>
+              <div class="citation">Games and Economic Behavior, volume 148, pages 385-397, 2024</div>
             </li>
             <li>
               <div class="item-title">
-                <a class="link" href="#" target="_blank" rel="noopener">Título del paper 2</a>
+                <a class="link" href="https://doi.org/10.1016/j.econlet.2024.111784" target="_blank" rel="noopener">A characterization of stable mechanisms that minimize manipulation</a>
               </div>
-              <div class="coauthors">Coautor 1, Coautor 2</div>
-              <div class="citation">Revista/Conferencia, Año</div>
+              <div class="citation">Economics Letters, volume 240, 111784, 2024</div>
             </li>
           </ul>
         </div>
@@ -359,47 +357,50 @@
           <ul class="list">
             <li>
               <div class="item-title">
-                <a class="link" href="#" target="_blank" rel="noopener">Título del working paper 1</a>
+                <a class="link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5139260" target="_blank" rel="noopener">Obvious manipulations in constrained school choice</a>
               </div>
-              <div class="coauthors">Coautor 1, Coautor 2, Coautor 3</div>
-              <div class="citation">Working Paper, Año</div>
+              <div class="citation">Last update: June 2025</div>
             </li>
             <li>
               <div class="item-title">
-                <a class="link" href="#" target="_blank" rel="noopener">Título del working paper 2</a>
+                <a class="link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4911281" target="_blank" rel="noopener">Minimizing manipulation in matching markets without outside options</a>
               </div>
-              <div class="coauthors">Coautor 1, Coautor 2</div>
-              <div class="citation">Working Paper, Año</div>
+              <div class="citation">Last update: April 2025</div>
             </li>
           </ul>
                 </div>
       </section>
 
       <section id="work-in-progress">
-        <h2 class="section-title">Work-in-Progress</h2>
+        <h2 class="section-title">Work in Progress</h2>
         <div class="card">
           <ul class="list">
             <li>
               <div class="item-title">
-                <a class="link" href="#" target="_blank" rel="noopener">Título del work-in-progress 1</a>
+                The mega core of two-sided matching markets with endowments
               </div>
-              <div class="coauthors">Coautor 1, Coautor 2</div>
-              <div class="citation">Work-in-Progress, Año</div>
+              <div class="citation">Draft coming soon!</div>
             </li>
             <li>
               <div class="item-title">
-                <a class="link" href="#" target="_blank" rel="noopener">Título del work-in-progress 2</a>
+                A theory of disappointment in school choice
               </div>
-              <div class="coauthors">Coautor 1, Coautor 2, Coautor 3</div>
-              <div class="citation">Work-in-Progress, Año</div>
+              <div class="coauthors">With Juan Escobar</div>
+              <div class="citation">Draft coming soon!</div>
             </li>
           </ul>
         </div>
       </section>
 
+      <section id="valdivia">
+        <div class="card">
+          <img src="photo2.jpeg" alt="Valdivia" class="second-photo" />
+        </div>
+      </section>
+
       <footer>
       <div class="container" style="padding:0;">
-        © <span id="y"></span> Camilo Jaramillo — Última actualización automática.
+        © <span id="y"></span>
       </div>
     </footer>
     </main>
