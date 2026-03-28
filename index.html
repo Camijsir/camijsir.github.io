@@ -11,7 +11,7 @@
 
   <meta property="og:title" content="Camilo J. Sirguiado — academic page" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="photo.jpeg" />
+  <meta property="og:image" content="photo3.jpeg" />
   <meta property="og:url" content="https://TU-USUARIO.github.io/" />
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,22 +21,22 @@
       --bg: #ffffff;
       --fg: #1a1a1a;
       --muted: #666666;
-      --accent: #1e3a8a;
+      --accent: #172554;
       --card: #fafafa;
       --border: #e0e0e0;
-      --link: #1e3a8a;
-      --link-hover: #1e40af;
+      --link: #172554;
+      --link-hover: #1e3a8a;
     }
     @media (prefers-color-scheme: dark){
       :root{
         --bg: #1a1a1a;
         --fg: #ffffff;
         --muted: #cccccc;
-        --accent: #3b82f6;
+        --accent: #2563eb;
         --card: #2a2a2a;
         --border: #404040;
-        --link: #3b82f6;
-        --link-hover: #60a5fa;
+        --link: #2563eb;
+        --link-hover: #3b82f6;
       }
     }
     * { box-sizing: border-box; }
@@ -76,7 +76,7 @@
       height: 200px; 
       border-radius: 50%; 
       object-fit: cover; 
-      object-position: center top;
+      object-position: center 42%;
       border: 3px solid white;
       margin-bottom: 40px;
     }
@@ -168,7 +168,7 @@
     }
     
     .section-title {
-      font-size: 36px;
+      font-size: 50px;
       font-weight: 700;
       margin: 0 0 40px 0;
       color: var(--accent);
@@ -247,9 +247,13 @@
     }
     
     .journal {
-      color: #000000;
+      color: var(--accent);
       font-weight: 700;
       font-size: 15.5px;
+    }
+
+    .email {
+      color: var(--accent);
     }
     
     /* Link styling matching Nano's */
@@ -304,7 +308,7 @@
     <!-- Left Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-content">
-        <img class="avatar" src="photo.jpeg" alt="Foto de perfil" />
+        <img class="avatar" src="photo3.jpeg" alt="Foto de perfil" />
         <nav class="sidebar-nav">
           <a href="#publicaciones">PUBLICATIONS</a>
           <a href="#working-papers">WORKING PAPERS</a>
@@ -328,7 +332,7 @@
         <p>
           I am a research fellow at Stanford Graduate School of Business, working with <a href="https://claudiaallende.com/" target="_blank" rel="noopener" class="link">Claudia Allende Santa-Cruz</a>.   
         <p>
-        My main interests lie in the fields of market design and matching theory. You can contact me at <strong>camijsir@stanford.edu</strong>.  
+        My main interests lie in the fields of market design and matching theory. You can contact me at <strong class="email">camijsir@stanford.edu</strong>.  
         <p>
           I am from Chile, and <a href="#valdivia" class="link">Valdivia</a> is my hometown.
         </p>
@@ -373,7 +377,7 @@
               <div class="item-title">
                 <a class="link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5139260" target="_blank" rel="noopener">Obvious manipulations in constrained school choice</a>
               </div>
-              <div class="citation">Under review at Theoretical Economics</div>
+              <div class="citation"><span class="journal">R&R at Theoretical Economics</span></div>
             </li>
           </ul>
                 </div>
