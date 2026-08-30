@@ -1,0 +1,255 @@
+%------------------------
+% Resume Template (Medium Spacing Version)
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section format (plain LaTeX; no titlesec)
+\newcommand{\cvsection}[1]{%
+  \par\vspace{2pt}%
+  {\large\scshape\raggedright #1\par}%
+  \vspace{2pt}{\color{black}\hrule height 0.4pt\relax}%
+  \vspace{2pt}%
+}
+\newenvironment{cvitemize}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{0pt}%
+    \setlength{\itemindent}{0pt}%
+    \setlength{\labelwidth}{0pt}%
+    \setlength{\labelsep}{0pt}%
+    \setlength{\itemsep}{4pt}%
+    \setlength{\parsep}{1.5pt}%
+  }%
+}{\end{list}}
+
+% Global spacing
+\setlength{\itemsep}{4pt}
+\setlength{\parskip}{1.5pt}
+
+% Commands
+\newcommand{\resumeItem}[2]{
+  \item\small{\textbf{#1}{: #2}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{
+  \resumeItem{#1}{#2}\vspace{2pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{cvitemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{cvitemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+%-----------------------------
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Camilo J. Sirguiado}} & Email: \href{mailto:camijsir@berkeley.edu}{camijsir@berkeley.edu} \\
+  & Web: \href{https://camijsir.github.io/}{https://camijsir.github.io/} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\cvsection{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+      {PhD in Economics}{University of California, Berkeley}
+      {}{2026 --}
+
+  \resumeSubheading
+      {Research Fellows Program}{Stanford Graduate School of Business}
+      {}{2025 -- 2026}
+
+  \resumeSubheading
+      {M.A. in Economics}{Universidad de Chile}
+      {Graduated with Maximum Distinction}{2023}
+
+  \resumeSubheading
+      {B.A. in Economics}{Universidad de Chile}
+      {Graduated with Maximum Distinction}{2021}
+
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\cvsection{Publications}
+\begin{cvitemize}
+  \item \href{https://www.sciencedirect.com/science/article/pii/S0165176524002684}{A characterization of stable mechanisms that minimize manipulation} \\
+  \small{\emph{Economics Letters}, volume 240, 111784, 2024}
+  \item \href{https://doi.org/10.1016/j.geb.2024.10.005}{Strategic behavior in one-to-one matching markets without outside options} (with JP Torres-Martinez) \\
+  \small{\emph{Games and Economic Behavior}, volume 148, pages 385-397, 2024}
+\end{cvitemize}
+
+%-----------WORKING PAPERS-----------------
+\cvsection{Working Papers}
+\begin{cvitemize}
+  \item \href{https://www.dropbox.com/scl/fi/t6sp6oiodjadyxc7hkgnd/credibility_0830.pdf?rlkey=u8gb7q222piil5jvmuow3vsdy&st=tmp10bel&dl=0}{Credibility in school choice} (with Jiarui Xie)
+  \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4911281}{Minimizing manipulation in matching markets without outside options} \\
+  \small{Revise and resubmit, \emph{Social Choice and Welfare}}
+  \item \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5139260}{Obvious manipulations in constrained school choice}\\
+  \small{Revise and resubmit, \emph{Theoretical Economics}}
+\end{cvitemize}
+
+%-----------RESEARCH ASSISTANT EXPERIENCE-----------------
+\cvsection{Research Assistant Experience}
+\resumeSubHeadingListStart
+
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Prof. Claudia Allende Santa Cruz} & Stanford Graduate School of Business \\
+      \small{Project: \textit{Competition under Social Interactions and the Design of Education Policies}.} & \\
+    \end{tabular*}
+
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Prof. Andrés Barrios Fernandez} & Universidad de los Andes, Chile \\
+      \small{Project: \textit{Effects of exposure to violent crimes on student's outcomes}.} & \\
+    \end{tabular*}
+
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Prof. Jose Antonio Carrasco} & Universidad Adolfo Ibáñez \\
+      \small{Project: \textit{Middlemen, liquidity and search}.} & \\
+    \end{tabular*}
+
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Prof. Andrés Gomez-Lobo} & Universidad de Chile \\
+      \small{Project: Several.} & \\
+    \end{tabular*}
+
+\resumeSubHeadingListEnd
+
+%-----------TEACHING-----------------
+\cvsection{Teaching}
+\resumeSubHeadingListStart
+
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Instructor Professor} & Universidad de los Andes, Chile \\
+      \small{Data Analytics.} & \\
+    \end{tabular*}
+
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Part-Time Professor} & Universidad Adolfo Ibáñez \\
+      \small{Microeconomics, Industrial Organization.} & \\
+    \end{tabular*}
+
+\resumeSubHeadingListEnd
+
+%-----------CONFERENCES-----------------
+\cvsection{Conferences}
+Recent Advances in School Choice Workshop, Universidad de Montevideo
+
+%-----------OTHER PROFESSIONAL ACTIVITIES-----------------
+\cvsection{Other Professional Activities}
+Referee for: Economic Letters and Social Choice and Welfare
+
+%-----------TEACHING ASSISTANT EXPERIENCE-----------------
+\cvsection{Teaching Assistant Experience}
+\resumeSubHeadingListStart
+
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{M.A. in Economics} & \\
+      \small{Microeconomics II (Prof. Juan Pablo Torres-Martinez).} & \\
+      \small{Quantitative Methods (Prof. Jorge Rivera).} & \\
+    \end{tabular*}
+
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{M.A. in Public Policy} & \\
+      \small{Public Policy (Prof. Oscar Landerretche).} & \\
+    \end{tabular*}
+
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{M.A. in Applied Economics} & \\
+      \small{Quantitative Methods (Prof. Jorge Rivera).} & \\
+    \end{tabular*}
+
+  \vspace{4pt}\item
+    \textbf{Undergraduate:}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{Microeconomics I (Prof. Jorge Rivera).} & \\
+      \small{Statistics (Prof. Eduardo Engel).} & \\
+      \small{Algebra and Precalculus.} & \\
+      \small{Linear Algebra.} & \\
+      \small{Optimization.} & \\
+    \end{tabular*}
+
+\resumeSubHeadingListEnd
+
+%-----------HONORS-----------------
+\cvsection{Honors and Awards}
+\begin{cvitemize}
+  \item Circle of Excellence Award, Universidad de Chile
+  \item Olympiad in Economics, First place representing Universidad de Chile
+  \item Scholarship for Academic Excellence, M.A. in Economics, Universidad de Chile
+\end{cvitemize}
+
+%-----------SKILLS-----------------
+\cvsection{Software}
+\resumeSubHeadingListStart
+
+  \resumeSubItem{Programming \& Statistical Software}{Julia, MATLAB, Stata, Python, Mathematica}
+
+  \resumeSubItem{Other Software}{\LaTeX, Excel}
+
+\resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------------
+\cvsection{Languages}
+Spanish (native), English (advanced)
+
+%-----------REFERENCES-----------------
+\cvsection{References}
+\begin{cvitemize}
+  \item \textbf{Claudia Allende Santa Cruz}, Assistant Professor, Stanford University
+  \item \textbf{Juan Escobar}, Associate Professor, University of Chile
+  \item \textbf{Juan Pablo Torres-Martinez}, Full Professor, University of Chile
+\end{cvitemize}
+
+\end{document}
+
